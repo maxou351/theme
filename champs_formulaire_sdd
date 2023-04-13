@@ -1,0 +1,96 @@
+------ exemple champs formulaire  ----
+1- EMAIL
+
+<div class="fr-input-group">
+    <label class="fr-label" for="email-1">
+        Adresse électronique
+        <span class="fr-hint-text">Format attendu : nom@domaine.fr</span>
+    </label>
+    <input class="fr-input" name="email" autocomplete="on" id="email-1" type="email">
+</div>
+
+2-CIVILITE
+
+<fieldset class="fr-fieldset" role="group" aria-describedby="sex-1427-fieldset-legend sex-1427-fieldset-messages" id="sex-1427-fieldset">
+    <legend class="fr-fieldset__legend" id="sex-1427-fieldset-legend">
+        Sexe
+    </legend>
+    <div class="fr-fieldset__element">
+        <div class="fr-radio-group">
+            <input type="radio" id="sex-female-1428" name="sex">
+            <label class="fr-label" for="sex-female-1428">
+                Feminin
+            </label>
+        </div>
+    </div>
+    <div class="fr-fieldset__element">
+        <div class="fr-radio-group">
+            <input type="radio" id="sex-male-1429" name="sex">
+            <label class="fr-label" for="sex-male-1429">
+                Masculin
+            </label>
+        </div>
+    </div>
+    <div class="fr-messages-group" assert-live="assertive" id="sex-1427-fieldset-messages">
+    </div>
+</fieldset>
+
+3- Date de naissance
+<fieldset class="fr-fieldset" id="date-default-1578-fieldset" role="group" aria-labelledby="date-default-1578-fieldset-legend date-default-1578-fieldset-messages">
+    <legend class="fr-fieldset__legend" id="date-default-1578-fieldset-legend">
+        Date de naissance
+        <span class="fr-hint-text">Texte de description additionnel</span>
+    </legend>
+    <div class="fr-fieldset__element fr-fieldset__element--inline fr-fieldset__element--number">
+        <div class="fr-input-group">
+            <label class="fr-label" for="date-default-1578-bday-day">
+                Jour
+                <span class="fr-hint-text">Exemple : 14</span>
+            </label>
+            <input class="fr-input" name="day" id="date-default-1578-bday-day" type="text">
+        </div>
+    </div>
+    <div class="fr-fieldset__element fr-fieldset__element--inline fr-fieldset__element--number">
+        <div class="fr-input-group">
+            <label class="fr-label" for="date-default-1578-bday-month">
+                Mois
+                <span class="fr-hint-text">Exemple : 12</span>
+            </label>
+            <input class="fr-input" name="month" id="date-default-1578-bday-month" type="text">
+        </div>
+    </div>
+    <div class="fr-fieldset__element fr-fieldset__element--inline fr-fieldset__element--inline-grow fr-fieldset__element--year">
+        <div class="fr-input-group">
+            <label class="fr-label" for="date-default-1578-bday-year">
+                Année
+                <span class="fr-hint-text">Exemple : 1984</span>
+            </label>
+            <input class="fr-input" name="year" id="date-default-1578-bday-year" type="text">
+        </div>
+    </div>
+    <div class="fr-messages-group" id="date-default-1578-fieldset-messages" aria-live="assertive">
+    </div>
+</fieldset>
+
+4- nom/prenom
+
+<fieldset class="fr-fieldset" aria-label="Demande de nom et prénom" aria-describedby="name-1-fieldset-messages">
+    <div class="fr-fieldset__element">
+        <div class="fr-input-group">
+            <label class="fr-label" for="input-family-name-1">
+                Nom
+            </label>
+            <input class="fr-input" spellcheck="false" autocomplete="family-name" name="family-name" id="input-family-name-1" type="text">
+        </div>
+    </div>
+    <div class="fr-fieldset__element">
+        <div class="fr-input-group">
+            <label class="fr-label" for="input-firstname-1">
+                Prénom
+            </label>
+            <input class="fr-input" spellcheck="false" autocomplete="given-name" name="given-name" id="input-firstname-1" type="text">
+        </div>
+    </div>
+    <div class="fr-messages-group" aria-live="assertive" id="name-1-fieldset-messages">
+    </div>
+</fieldset>

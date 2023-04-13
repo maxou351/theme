@@ -1,0 +1,257 @@
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto-Regular'), url(../font/roboto/roboto_regular_ext.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+  /* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto-Regular'), url(../font/roboto/roboto_regular.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url(../font/roboto/roboto_bold_ext.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url(../font/roboto/roboto_bold.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.container-fluid {
+    font-family: Roboto;
+}
+
+#login, #presentation {
+    min-height: 100vh;
+}
+
+#login {
+    padding: 3rem 6rem;
+    font-weight: bold
+}
+
+#logo-wrapper {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+#logo {
+    height: 2.5em;
+}
+
+#login-caption {
+    font-size: 2rem;
+    font-weight: bolder;
+    line-height: 1;
+}
+
+#zocial-franceconnect {
+    background-image: url("../img/FCboutons-10.svg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 284px;
+    height: 82px;
+}
+
+#zocial-franceconnect:hover {
+    background-image: url("../img/FCboutons-11.svg");
+}
+
+/*#zocial-franceconnect {*/
+/*    font-family: Roboto;*/
+/*    background-color: #034EA2;*/
+/*    color: white;*/
+/*    line-height: 1;*/
+/*}*/
+
+/*#zocial-franceconnect:hover {*/
+/*   color: white;*/
+/*}*/
+
+/*#zocial-franceconnect img{*/
+/*    height: 34px;*/
+/*}*/
+
+.required::after {
+    content: '*';
+    color: red;
+}
+
+/******************** Presentation **************************/
+#presentation {
+    background: rgb(21,41,99);
+    background: -moz-linear-gradient(45deg, rgba(21,41,99,1) 0%, rgba(16,177,228,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(21,41,99,1) 0%, rgba(16,177,228,1) 100%);
+    background: linear-gradient(45deg, rgba(21,41,99,1) 0%, rgba(16,177,228,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#152963",endColorstr="#10b1e4",GradientType=1);
+    padding: 3rem 5rem;
+}
+#slogan {
+    color: #C3DDF0;
+    font-size: 2rem;
+    padding-top: 7rem;
+}
+
+#presentation .card-body {
+    min-height: 88px;
+}
+
+#presentation .card-img-top {
+    flex: 0 0 auto;
+}
+
+
+.around-line-separator {
+    display:flex;
+    flex-direction: row;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/*
+* Create a line around the world like this ( --------------- Word ----------------- )
+*/
+.around-line-separator:before, .around-line-separator:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 3px solid #bbb;
+    margin:auto;
+}
+
+.around-line-separator span {
+    position:relative;
+    padding: 0 1rem;
+}
+
+/********************** Registration ********************/
+
+#info {
+    background: rgb(21,41,99);
+    background: -moz-linear-gradient(45deg, rgba(21,41,99,1) 0%, rgba(16,177,228,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(21,41,99,1) 0%, rgba(16,177,228,1) 100%);
+    background: linear-gradient(45deg, rgba(21,41,99,1) 0%, rgba(16,177,228,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#152963",endColorstr="#10b1e4",GradientType=1);
+    color: white;
+    font-family: Roboto;
+    font-size:2rem;
+    padding: 0 5rem;
+}
+#mindef-logo img{
+    width: 100px;
+    
+}
+
+
+#registration {
+    padding: 3rem 5rem;
+}
+
+
+/****************** Dropdown **************************/
+/*#kc-locale-dropdown {*/
+/*    z-index: 2;*/
+/*    border: 1px solid black;*/
+/*}*/
+/*.dropdown-item {*/
+/*    background-color: white;*/
+/*}*/
+
+/****************** Reset Password, Update password  ***********************/
+.generic-background {
+    min-height: 100vh;
+    background: rgb(21,41,99);
+    background: -moz-linear-gradient(45deg, rgba(21,41,99,1) 0%, rgba(16,177,228,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(21,41,99,1) 0%, rgba(16,177,228,1) 100%);
+    background: linear-gradient(45deg, rgba(21,41,99,1) 0%, rgba(16,177,228,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#152963",endColorstr="#10b1e4",GradientType=1);
+    color: white;
+}
+
+.generic-background a  {
+    color: white;
+}
+
+.generic-background a:hover{
+    color: #b3b3b3;
+}
+
+/******************** GCU *************************/
+.background-with-modal {
+    min-height: 100vh;
+    background: rgb(21,41,99);
+    background: -moz-linear-gradient(45deg, rgba(21,41,99,1) 0%, rgba(16,177,228,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(21,41,99,1) 0%, rgba(16,177,228,1) 100%);
+    background: linear-gradient(45deg, rgba(21,41,99,1) 0%, rgba(16,177,228,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#152963",endColorstr="#10b1e4",GradientType=1);
+    padding: 3rem;
+}
+
+.background-with-modal > div {
+    background-color: white;
+    padding: 3rem;
+}
+
+/******* SM size **************************************/
+@media screen and (max-width: 767px) {
+    #login {
+        padding: 2rem 1rem;
+    }
+
+    #registration {
+        padding: 2rem 1rem;
+    }
+
+    .background-with-modal{
+        padding: 2rem 1rem ;
+    }
+
+    .background-with-modal > div {
+        padding: 2rem 0rem ;
+    }
+
+    #logo {
+        height: 1.5em;
+    }
+
+    
+}
+
+/******* MD size **************************************/
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    #login {
+        padding: 3rem;
+    }
+
+    .background-with-modal, .background-with-modal > div {
+        padding: 2rem;
+    }
+
+    #info {
+        padding: 0 2rem;
+        font-size:1.5rem;
+    }
+}
+
+/*************** Fix awesomeplete *******************/
+.awesomplete {
+    display:block;
+}

@@ -1,0 +1,2 @@
+<#ftl output_format="plainText">
+${msg("identityProviderLinkBody", identityProviderAlias, realmName, identityProviderContext.username, link?replace('http://', 'https://'), linkExpiration?replace('http://', 'https://'))}
